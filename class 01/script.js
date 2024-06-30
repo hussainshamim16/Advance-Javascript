@@ -16,3 +16,45 @@
 
 var firstName = "Hussain"
 console.log(firstName)
+var firstName = "shamim"
+console.log(firstName) // this is problem
+
+let secondName = "ali"
+// let secondName = "shamim" // Eror
+secondName = "ali rehman"
+console.log(secondName)
+
+const third = "rehman Bhutto" // this is a constant variable 
+console.log(third)
+
+
+function normalFnc(){
+    // block of statement
+}
+
+const ArrowFnc = ()=>{
+    // block of state ment
+}
+
+// return value in arrow fnc
+const ret = ()=>6+1;
+console.log(ret())
+
+// mager diffrent in fnc
+//                                  This Key word
+const ke = ()=>{
+    console.log(this) // ye hamesah global window dekhay ga
+}
+
+const studentObj = {
+    name:"ali",
+    age:"17",
+    course: function(){
+        var a = this
+    }
+}
+
+const {name,age, course} = studentObj
+
+console.log(course())
+
