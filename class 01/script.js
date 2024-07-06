@@ -49,12 +49,12 @@ const ke = ()=>{
 const studentObj = {
     name:"ali",
     age:"17",
-    course: function(){
-        var a = this
+    course: ()=>{
+        console.log(this)
     }
 }
 
 const {name,age, course} = studentObj
 
-console.log(course())
+console.log(name)
 
